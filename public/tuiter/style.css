@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    border: 1px solid rgb(47, 51, 54);
+    margin-left: 16px;
+}
+
+.wd-sub-head {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    padding-top:10px;
+}
+
+.wd-inline-text {
+    display: inline;
+}
+
+.wd-inline-text-bold {
+    display: inline;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-3-dots {
+    height: 10px;
+    width: 10px;
+    float: right;
+}
