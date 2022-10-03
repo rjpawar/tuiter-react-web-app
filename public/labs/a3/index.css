@@ -195,6 +195,12 @@ p#id-selector-2 {
     background-color: red;
     color: white;
 }
+.rotate-list-counter {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
 .rotate-list-items li {
     width: 100px;
     text-align: right;
@@ -238,8 +244,18 @@ p#id-selector-2 {
     width: 200px;
     height: 200px;
 }
+.gradients-linear-example {
+    background: linear-gradient(deeppink, black);
+    width: 200px;
+    height: 200px;
+}
 .gradients-radial {
     background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial-example {
+    background: radial-gradient(darkcyan, yellow);
     width: 200px;
     height: 200px;
 }
@@ -247,6 +263,14 @@ p#id-selector-2 {
     background:
             radial-gradient(
                     at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.gradients-positioned-example {
+    background:
+            radial-gradient(
+                    at bottom left, rebeccapurple, yellow);
     width: 200px;
     height: 200px;
     color: white;
@@ -292,6 +316,52 @@ p#id-selector-2 {
         width: 200px;
         height: 200px;
         background-color: red;
+        color: white;
+    }
+}
+.animation-keyframes-example {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slideinEx;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    color: black;
+}
+
+@keyframes slideinEx {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        color: limegreen;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 50%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: palevioletred;
         color: white;
     }
 }
