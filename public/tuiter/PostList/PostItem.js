@@ -18,7 +18,7 @@ const PostSummaryItem = (post) => {
               </div>
               <p class="small text-white">${post.message}</p>
               <div class="border border-light rounded-bottom rounded-top">
-                <img src=${post.image} class="w-100 rounded-top border-bottom border-light">
+                <img src=${post.image} class="w-100 rounded-top border-bottom border-light" alt="">
                 <div class="p-2">
                   <h5 class="small fw-bold">${post.title}</h5>
                   <div class="small text-secondary">${post.description}</div>
@@ -50,6 +50,6 @@ const PostSummaryItem = (post) => {
 export default PostSummaryItem;
 
 const isUrl = (url) => {
-    return (url !== ""? `<i class="fa-solid fa-link"></i>${url}` : ``);
+    return (url !== ""? `<i class="fa-solid fa-link"></i> ${url}` : ``);
 
 }
