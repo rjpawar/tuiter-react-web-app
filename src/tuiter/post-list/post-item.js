@@ -11,18 +11,27 @@ const PostItem = (
     {
         post = {
             "_id": 100,
-            "avatar": "../../public/images/elon_profile.jpeg",
-            "userName": "Elon Musk",
-            "handle": "@elonmusk",
+            "avatar": "gojo.jpg",
+            "userName": "Satoru Gojo",
+            "handle": "@gojosan",
             "time": "23h",
-            "message": "Amazing show about @inspiration4x mission!",
-            "image": "../../images/inspiration4.jpeg",
-            "contentTitle": "Countdown: Inspiration4 Mission to Space | Netflix Official Site",
-            "contentSnippet": "From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space...",
-            "contentOwner": "netflix.com",
-            "numComments": "4.2K",
-            "numRetweets": "3.5K",
-            "numLikes": "37.5K"
+            "message": "\"There's no curse more twisted than love.\"",
+            "image": "jjk2.jpg",
+            "title": "JUJUTSU KAISEN 0 is now streaming on Crunchyroll!",
+            "description": "Yuta Okkotsu, a high schooler who gains control of an extremely powerful Cursed Spirit and gets enrolled in the Tokyo Prefectural Jujutsu High School by Jujutsu Sorcerers to help him control his power and keep an eye on him.",
+            "url": "crunchyroll.com",
+            "comments": "4.2K",
+            "retweets": "3.5K",
+            "likes": "37.5K",
+            "isRetuit": true,
+            "postContent": {
+                "avatarIcon": "",
+                "userName": "",
+                "handle": "",
+                "time": "",
+                "header": "",
+                "headerPostLink": ""
+            }
         }
     }
 ) => {
