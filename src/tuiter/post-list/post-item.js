@@ -29,6 +29,8 @@ const PostItem = (
     return(
           <div className="row list-item-group border-bottom pb-2 pt-2 border-gray">
             <div className="col-1 float-left d-inline-block">
+                {post.isRetuit && <div><a href="#" className="text-decoration-none text-secondary small ms-4">
+                    <FontAwesomeIcon icon={faRetweet} className="pe-2 text-decoration-none text-secondary fa-1x" /></a></div>}
                 <div className="wd-profile-pic">
                     <img src={`/images/${post.avatar}`} alt=""></img>
                 </div>
@@ -36,6 +38,10 @@ const PostItem = (
             <div className="col-11 ps-4">
                 <div className="row position-relative">
                 <div className="col-11">
+                    {post.isRetuit && <div className="text-secondary small">
+                        MAPPA Retuited
+                    </div>}
+
                   <span className="fw-bold small">{post.userName} </span>
                   <span><FontAwesomeIcon icon={faCircleCheck} className="pe-1 text-decoration-none small" /></span>
                   <span className="small text-secondary">{post.handle}</span>
@@ -45,7 +51,28 @@ const PostItem = (
               </div>
               <p className="small">{post.message}</p>
               <div className="border border-gray rounded-bottom rounded-top">
-                  <img src={`/images/${post.image}`} className="w-100 rounded-top border-bottom border-gray " alt=""></img>
+                  <div className="mt-2 ms-2">
+                      {
+                          post.image.length > 0 &&
+                          <img src={`/images/${post.image}`} className="w-100 rounded-top border-bottom border-gray " alt=""></img>
+                      }
+                  </div>
+                  <div>
+                      {
+                          post.postContent.userName.length > 0 &&
+                          <div className="ms-2">
+                              <div className="mt-1"><img className="rounded-circle me-1 mb-1 ms-2" height={15} src={`/images/${post.postContent.avatarIcon}`}/>
+                                  <span className="fw-bold small">{post.postContent.userName}</span>
+                                  <span ><FontAwesomeIcon icon={faCircleCheck} className="pe-1 text-decoration-none small" /></span>
+                                  <span className="small text-secondary"> @{post.postContent.handle}</span> &#183; <span className="small text-secondary">{post.postContent.time}</span></div>
+                              <div className="ms-2 me-1 mb-1"> {post.postContent.header} <i className="bi bi-arrow-right"></i>
+                                  <a className="text-decoration-none" href="#"> {post.postContent.headerPostLink}</a>
+                              </div>
+                          </div>
+                      }
+                  </div>
+
+
                 <div className="p-2">
                   <h5 className="small fw-bold">{post.title}</h5>
                   <div className="small text-secondary">{post.description}</div>
@@ -68,6 +95,7 @@ const PostItem = (
                 <div className="col-3 text-decoration-none text-secondary">
                   <a href="#"><FontAwesomeIcon icon={faArrowUpFromBracket} className="pe-2 text-decoration-none text-secondary fa-1x" /></a>
                 </div>
+                <div className="pt-4"><a className="text-decoration-none" href="#">Show this thread</a> </div>
             </div>
             
             </div>

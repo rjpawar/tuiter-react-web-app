@@ -12,7 +12,16 @@
     "url": "crunchyroll.com",
     "comments": "4.2K",
     "retweets": "3.5K",
-    "likes": "37.5K"
+    "likes": "37.5K",
+    "isRetuit": true,
+    "postContent": {
+      "avatarIcon": "",
+      "userName": "",
+      "handle": "",
+      "time": "",
+      "header": "",
+      "headerPostLink": ""
+    }
   },
   {
     "_id": 101,
@@ -21,12 +30,21 @@
     "handle": "@mappastudio",
     "time": "23h",
     "message": "Jujutsu Kaisen season 2 will release in 2023.",
-    "image": "jjk1.jpg",
+    "image": "",
     "title": "",
     "description": "",
     "url": "",
     "comments": "965",
     "retweets": "2.4K",
-    "likes": "4K"
+    "likes": "4K",
+    "isRetuit": false,
+    "postContent": {
+      "avatarIcon": "ita.jpg",
+      "userName": "SpaceX",
+      "handle": "SpaceX",
+      "time": "23h",
+      "header": "Starlink for RVs now has over 100,00 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage",
+      "headerPostLink": "starlink.com/rv"
+    }
   }
 ]
