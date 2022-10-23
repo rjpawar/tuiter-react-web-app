@@ -1,0 +1,21 @@
+.wd-image img {
+    height: 40px;
+    width: 40px;
+}
+
+.wd-image-logo img {
+    height: 70px;
+    width: 70px;
+}
+.fontAwesome {
+    font-family: "Helvetica", FontAwesome, sans-serif;
+}
+
+.wd-profile-pic img {
+    border-radius: 24px;
+    height: 48px;
+    width: 48px;
+}
+
+
+
