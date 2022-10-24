@@ -3,7 +3,7 @@
     "_id": 100,
     "avatar": "gojo.jpg",
     "userName": "Satoru Gojo",
-    "handle": "@gojosan",
+    "handle": "gojosan",
     "time": "23h",
     "message": "\"There's no curse more twisted than love.\"",
     "image": "jjk2.jpg",
@@ -27,7 +27,7 @@
     "_id": 101,
     "avatar": "ita.jpg",
     "userName": "MAPPA",
-    "handle": "@mappastudio",
+    "handle": "mappastudio",
     "time": "23h",
     "message": "Jujutsu Kaisen season 2 will release in 2023.",
     "image": "",
@@ -40,11 +40,11 @@
     "isRetuit": false,
     "postContent": {
       "avatarIcon": "ita.jpg",
-      "userName": "SpaceX",
-      "handle": "SpaceX",
+      "userName": "MAPPA",
+      "handle": "mappastudio",
       "time": "23h",
-      "header": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage",
-      "headerPostLink": "starlink.com/rv"
+      "header": "As confirmed during an event in Japan (H/T Crunchyroll (opens in new tab)), Jujutsu Kaisen season 2 will release in 2023. It could debut during one of anime’s three major release windows: Winter 2023 (starting January 2023), Spring 2023 (starting April 2023), or Fall 2023 (starting October 2023).",
+      "headerPostLink": "jjk.com/rv"
     }
   }
 ]

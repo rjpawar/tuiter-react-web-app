@@ -13,7 +13,7 @@ const PostItem = (
             "_id": 100,
             "avatar": "gojo.jpg",
             "userName": "Satoru Gojo",
-            "handle": "@gojosan",
+            "handle": "gojosan",
             "time": "23h",
             "message": "\"There's no curse more twisted than love.\"",
             "image": "jjk2.jpg",
@@ -53,7 +53,7 @@ const PostItem = (
 
                   <span className="fw-bold small">{post.userName} </span>
                   <span><FontAwesomeIcon icon={faCircleCheck} className="pe-1 text-decoration-none small" /></span>
-                  <span className="small text-secondary">{post.handle}</span>
+                  <span className="small text-secondary">@{post.handle}</span>
                   <span className="small text-secondary"> &#183; {post.time}</span>
                 </div>
                 <div className="col-1"><a className=" text-secondary" href="#"><FontAwesomeIcon icon={fasEllipsis} /></a></div>
