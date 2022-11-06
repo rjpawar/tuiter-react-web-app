@@ -60,7 +60,7 @@ const PostItem = (
               </div>
               <p className="small">{post.message}</p>
               <div className="border border-gray rounded-bottom rounded-top">
-                  <div className="mt-2 ms-2">
+                  <div>
                       {
                           post.image.length > 0 &&
                           <img src={`/images/${post.image}`} className="w-100 rounded-top border-bottom border-gray " alt=""></img>
