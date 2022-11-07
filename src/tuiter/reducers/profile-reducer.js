@@ -9,7 +9,7 @@ const profile =   {
     bio: "One-Punch Man (Japanese: ワンパンマン, Hepburn: Wanpanman) is a Japanese superhero manga series created by One. It tells the story of Saitama, a superhero who, because he can defeat any opponent with a single punch, grows bored from a lack of challenge. One wrote the original webcomic manga version in early 2009.",
     website: "onepunchman.com",
     location: "City Z, Japan",
-    dateOfBirth: "29th March 1994",
+    dateOfBirth: "1994-03-29",
     dateJoined: "August 2021",
     numberOfTweets: "3457",
     followingCount: "123",

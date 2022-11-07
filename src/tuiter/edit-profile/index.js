@@ -15,7 +15,7 @@ const EditProfileComponent = () => {
     const [bio, setBio] = useState(profile.bio);
     const [location, setLocation] = useState(profile.location);
     const [website, setWebsite] = useState(profile.website);
-    const [dateOfBirth] = useState(profile.dateOfBirth);
+    const [dateOfBirth, setBirthDate] = useState(profile.dateOfBirth);
 
     function handleNameChange(e) {
         const newName = e.target.value.split(" ")
@@ -59,6 +59,15 @@ const EditProfileComponent = () => {
         setProfile(newProfile)
     }
 
+    function handleBirthDateChange(e) {
+        const newDate = e.target.value;
+        setBirthDate(newDate);
+        const newProfile = {
+            ...profile,
+            dateOfBirth: newDate
+        }
+        setProfile(newProfile)
+    }
     const dispatch = useDispatch();
     const updateProfileHandler = (event) => {
         dispatch(updateProfile({
@@ -155,11 +164,16 @@ const EditProfileComponent = () => {
                                                      handleWebsiteChange(event)}/>
                                 </FloatingLabel>
                             </FormGroup>
+                            <FormGroup className="mb-3" controlId="formGroupBirthDate">
+                                <FloatingLabel id="fBirth" label="Birth Date" className="mb-3">
+                                    <FormControl as="input"
+                                                 value={dateOfBirth}
+                                                 type="date"
+                                                 onChange={(event) =>
+                                                     handleBirthDateChange(event)}/>
+                                </FloatingLabel>
+                            </FormGroup>
                         </Form>
-                        <div>
-                            <div className="small">Birth Date &#183; <a href="#" className="link-primary text-decoration-none">Edit</a></div>
-                            <div>{dateOfBirth}</div>
-                        </div>
                         <div className="mt-3">
                             Switch to Professional
                             <a href="#" className="link-primary text-decoration-none"><i className="bi bi-arrow-right float-end"></i></a>
