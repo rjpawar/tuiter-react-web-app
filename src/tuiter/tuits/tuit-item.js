@@ -5,7 +5,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {faCircleCheck, faEllipsis as fasEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faHeart as fasHeart} from '@fortawesome/free-solid-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet, faCertificate} from '@fortawesome/free-solid-svg-icons'
-import {deleteTuit} from "../reducers/tuits-reducer";
+//import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 import TuitStats from "./tuit-stats";
 
 library.add(fasEllipsis, fasHeart, faComment, faArrowUpFromBracket, faRetweet, faCertificate)
@@ -31,14 +32,14 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
         <li className="list-group-item">
             <article className="row">
                 <div className="col-1 wd-avatar img-fluid">
-                    <img src={tuit.image} alt="tuit" className="rounded-circle"></img>
+                    <img src={tuit.image} alt="tuit" className="rounded-circle" width={60} ></img>
                 </div>
                 <section className="col-11 ps-4">
                     <div className="row">

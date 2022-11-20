@@ -13,7 +13,7 @@ import {Provider} from "react-redux";
 const store = configureStore({
     reducer: {
         who: whoReducer,
-        tuits: tuitsReducer,
+        tuitsData: tuitsReducer,
         profile: profileReducer
     }});
 
