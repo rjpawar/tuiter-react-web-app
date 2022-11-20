@@ -1,6 +1,6 @@
 import axios from 'axios';
 //const TUITS_API = 'http://localhost:4000/api/tuits';
-//const TUITS_API = 'http://tuiternodeserverapp-env.eba-g8m3gm5u.us-west-2.elasticbeanstalk.com/api/tuits'
+//const API_BASE = 'http://tuiternodeserverapp-env.eba-g8m3gm5u.us-west-2.elasticbeanstalk.com/api'
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
 
