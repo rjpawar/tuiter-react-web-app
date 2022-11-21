@@ -10,7 +10,7 @@ const WhatsHappening = () => {
     const tuitClickHandler = () => {
         const newTuit = {
             handle: '@spacex',
-            image: '/images/nasa.png',
+            image: '/images/spacex.jpg',
             time: '1m',
             username: 'SpaceX',
             likes:0,
@@ -24,7 +24,7 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                <img src="/images/nasa.png" width={60}/>
+                <img src="/images/spacex.jpg" width={60} className="rounded-circle"/>
             </div>
             <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
